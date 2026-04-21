@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <title>KECH GRAPHIX | Professional Graphic Design Portfolio</title>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+        <script id="tailwind-config">
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                extend: {
+                    "colors": {
+                            "on-secondary-fixed-variant": "#2b418d",
+                            "tertiary-fixed-dim": "#ffb5a0",
+                            "surface-container-high": "#2a2a2a",
+                            "on-tertiary-container": "#ffe1d9",
+                            "surface-tint": "#b6c4ff",
+                            "on-primary": "#002780",
+                            "inverse-primary": "#004dea",
+                            "inverse-on-surface": "#313030",
+                            "primary-fixed": "#dce1ff",
+                            "error": "#ffb4ab",
+                            "on-secondary": "#0e2976",
+                            "outline": "#8d90a2",
+                            "surface": "#131313",
+                            "on-tertiary-fixed": "#3b0900",
+                            "surface-bright": "#393939",
+                            "surface-dim": "#131313",
+                            "secondary": "#b6c4ff",
+                            "on-background": "#e5e2e1",
+                            "on-tertiary-fixed-variant": "#872100",
+                            "on-error-container": "#ffdad6",
+                            "primary-container": "#0055ff",
+                            "outline-variant": "#434656",
+                            "tertiary-fixed": "#ffdbd1",
+                            "on-surface-variant": "#c3c5d9",
+                            "surface-container-lowest": "#0e0e0e",
+                            "primary-fixed-dim": "#b6c4ff",
+                            "surface-variant": "#353534",
+                            "on-primary-fixed-variant": "#0039b3",
+                            "on-secondary-container": "#a3b5ff",
+                            "on-primary-fixed": "#001551",
+                            "surface-container-highest": "#353534",
+                            "error-container": "#93000a",
+                            "secondary-container": "#2d4490",
+                            "primary": "#b6c4ff",
+                            "surface-container": "#201f1f",
+                            "on-surface": "#e5e2e1",
+                            "secondary-fixed": "#dce1ff",
+                            "on-secondary-fixed": "#001551",
+                            "tertiary": "#ffb5a0",
+                            "on-error": "#690005",
+                            "surface-container-low": "#1c1b1b",
+                            "tertiary-container": "#c13301",
+                            "background": "#131313",
+                            "inverse-surface": "#e5e2e1",
+                            "secondary-fixed-dim": "#b6c4ff",
+                            "on-primary-container": "#e3e6ff",
+                            "on-tertiary": "#601400"
+                    },
+                    "borderRadius": {
+                            "DEFAULT": "0.125rem",
+                            "lg": "0.25rem",
+                            "xl": "0.5rem",
+                            "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                            "headline": ["Manrope"],
+                            "body": ["Inter"],
+                            "label": ["Inter"]
+                    }
+                },
+                },
+            }
+        </script>
+        <style>
+                .material-symbols-outlined {
+                    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+                }
+                body {
+                    background-color: #131313;
+                    color: #e5e2e1;
+                    font-family: 'Inter', sans-serif;
+                }
+                .hero-gradient {
+                    background: radial-gradient(circle at 50% 50%, rgba(182, 196, 255, 0.03) 0%, transparent 70%);
+                }
+        </style>
+    </head>
+    <body class="bg-surface selection:bg-primary selection:text-on-primary">
+        <!-- TopNavBar -->
+        <header class="fixed top-0 w-full z-50 bg-[#131313]/80 backdrop-blur-2xl shadow-[0_20px_50px_rgba(229,226,225,0.04)]">
+            <nav class="flex justify-between items-center px-6 md:px-12 py-6 w-full max-w-7xl mx-auto">
+                <div class="text-2xl font-black tracking-tighter text-[#e5e2e1] font-headline">KECH GRAPHIX</div>
+                <div class="hidden md:flex items-center space-x-12 font-manrope font-medium tracking-tight">
+                    <a class="text-[#c3c5d9] hover:text-[#b6c4ff] transition-colors duration-300 active:scale-95 transition-transform" href="{% url 'kechgraphix:home' %}">Work</a>
+                    <a class="text-[#b6c4ff] border-b border-[#b6c4ff]/50 pb-1 active:scale-95 transition-transform" href="{% url 'kechgraphix:gallery' %}">Archive</a>
+                    <a class="text-[#c3c5d9] hover:text-[#b6c4ff] transition-colors duration-300 active:scale-95 transition-transform" href="{% url 'kechgraphix:home' %}">Process</a>
+                    <a class="text-[#c3c5d9] hover:text-[#b6c4ff] transition-colors duration-300 active:scale-95 transition-transform" href="{% url 'kechgraphix:about' %}">About</a>
+                </div>
+                <button class="bg-primary-fixed text-on-primary-fixed px-6 py-2.5 rounded-full font-headline font-bold text-sm hover:shadow-[0_0_20px_rgba(182,196,255,0.2)] transition-all active:scale-95">
+                    Contact
+                </button>
+            </nav>
+        </header>
+        <main class="pt-24">
+            <!-- Hero Section -->
+            <section class="relative h-[921px] flex flex-col items-center justify-center px-6 md:px-12 overflow-hidden hero-gradient">
+                <div class="max-w-5xl text-center z-10">
+                    <span class="inline-block font-label text-[0.75rem] uppercase tracking-[0.2em] text-tertiary mb-6 opacity-80">Visual Architect &amp; Creative Director</span>
+                    <h1 class="font-headline text-5xl md:text-8xl font-extrabold tracking-tight leading-[1.1] mb-8 text-on-surface">
+                                    WE ARCHIVE <br/>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary-fixed to-secondary">EXCELLENCE</span>
+                    </h1>
+                    <p class="font-body text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed mb-12">
+                                        A cinematic approach to visual storytelling. We transform complex brand narratives into timeless digital experiences.
+                                    </p>
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+                        <button class="bg-primary px-8 py-4 rounded-full text-on-primary font-headline font-bold tracking-tight hover:shadow-[0_0_30px_rgba(182,196,255,0.3)] transition-all active:scale-95">
+                                            View Projects
+                                        </button>
+                        <button class="flex items-center gap-2 group text-on-surface hover:text-primary transition-colors py-4">
+                            <span class="font-headline font-bold">Watch Showreel</span>
+                            <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">play_circle</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Decorative Pattern Element -->
+                <div class="absolute inset-0 z-0 opacity-10 pointer-events-none">
+                    <img class="w-full h-full object-cover grayscale mix-blend-overlay" data-alt="abstract architectural minimalist pattern with clean lines and geometric shadows in deep charcoal and metallic silver tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9qldSHBSOQkQrTA-JeU8t8ZTvJZ4sV9KEkBXM5-m1G9VIaUKbkZdFvrCZayQtivsAdG3HtApXsVP8e1XgUkQVD5Wo05iUmeUvS-UBW_kkIi64ZEEdkrj-fbOmvlgLIo-0nSrCurBgyiHuxE6IXjuRGZy_zwb-gfOV7Iz8AZECcGnCMSXBTG-RukUIA1TShbFpev5K1lbnm7fVSAhlePfiS1g3YGZ8j3XDQIQzo7l4QxVxlp68CfsZJGf6-YE3Uu0UUlmLDcmKwg"/>
+                </div>
+            </section>
+            <!-- Featured Projects Bento Grid -->
+            <section class="px-6 md:px-12 py-32 max-w-7xl mx-auto">
+                <div class="flex justify-between items-end mb-16">
+                    <div>
+                        <h2 class="font-headline text-4xl md:text-5xl font-bold tracking-tight mb-4">Selected Works</h2>
+                        <p class="text-on-surface-variant max-w-md">Highlighting the intersection of high-end aesthetics and functional design.</p>
+                    </div>
+                    <div class="hidden md:block">
+                        <span class="font-label text-xs uppercase tracking-[0.1em] text-outline">Showing 04 / 12</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
+                    <!-- Large Project -->
+                    <div class="md:col-span-8 group cursor-pointer">
+                        <div class="relative overflow-hidden rounded-md aspect-[16/9] mb-6 bg-surface-container-low">
+                            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" data-alt="ultra minimalist black and white fashion editorial layout with high contrast lighting and elegant sans-serif typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLMP3xUydQeALbvwuSx_bAAFrv8XLKI1zQj8HxhuqA8ArY2nfuOVwiPaHqtY0exg3cW3jw_3CFkyKa0CM6muezF84NhJl-a5XB3Xj4TTbpDMYxeiVezRldUPhw7h3pJf2Lx8BY_RkVQyV6ruvQhJn8tuTeUD9gHppV4UHZ65cDW4feS7YEnTi4wFEfZ6ugR9Kt5g2v7OV7CTroegbOKkpkNTQKGYDF2nIHK6To9Uxn7JRad1LcsMB6a-q7MDgPy6PVTZagBG9Kxw"/>
+                            <div class="absolute top-6 left-6 flex gap-2">
+                                <span class="bg-surface-container-highest/60 backdrop-blur-md px-3 py-1 rounded-sm text-[0.65rem] font-label uppercase tracking-wider">Visual Identity</span>
+                                <span class="bg-surface-container-highest/60 backdrop-blur-md px-3 py-1 rounded-sm text-[0.65rem] font-label uppercase tracking-wider">2024</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-headline text-2xl font-bold group-hover:text-primary transition-colors">Nocturnal Noir Studio</h3>
+                            <span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">north_east</span>
+                        </div>
+                    </div>
+                    <!-- Small Project 1 -->
+                    <div class="md:col-span-4 group cursor-pointer mt-0 md:mt-24">
+                        <div class="relative overflow-hidden rounded-md aspect-[4/5] mb-6 bg-surface-container-low">
+                            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" data-alt="conceptual album cover with iridescent textures and liquid metal typography on a deep indigo background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOXM0EQ-_XsEBqZ8MAYm984C6RPR_6XG9YvBIp0ZdQ-JEldsvPWnx-Vnr8v2omLfNs9lA0upT66yVxn2TwJbfrn_Ea3bQEV1ETA00hPG3VFQUdajZ59i7mGEcog8aLRQkjrMEtU6j3PPNgn_Wbw0ImSh_Df1t6MURsCVeFIROL36iuSd6B3bpm09QtajA8zbZYroq4Lg5oUx_JouJeEfjee0pqOVEVY_wmaeV_9N1LTQXBgLM1DTd6qCtJGVpyS8Zl326xUuzf5g"/>
+                            <div class="absolute top-6 left-6">
+                                <span class="bg-surface-container-highest/60 backdrop-blur-md px-3 py-1 rounded-sm text-[0.65rem] font-label uppercase tracking-wider">Editorial</span>
+                            </div>
+                        </div>
+                        <h3 class="font-headline text-xl font-bold group-hover:text-primary transition-colors">Lumina Soundscape</h3>
+                    </div>
+                    <!-- Small Project 2 -->
+                    <div class="md:col-span-4 group cursor-pointer -mt-0 md:-mt-12">
+                        <div class="relative overflow-hidden rounded-md aspect-[4/5] mb-6 bg-surface-container-low">
+                            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" data-alt="abstract geometric print design with bold primary colors and grainy risograph texture on premium off-white paper" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxca92yNhF30CqPdSu4FeRg93JZPUv7i2Ego6-0yOb9CMR0wzxPjBuDCzj-2_zC78bi219GCC8CSynQBFyBGQfUYT-OSc_P6E5eWxOSnxkXp2vbjX3FRHT9EYBCBC6hmiBLCo1iDX35idNqrIqmSVj5156L_5AYqNNPOYdXLI3z1JVrvhtvlYl-U3Y42jrtSpXXAtwXnKjKWF0GA5pgei8ysHBQOleJoRuVAwkoV7ymQnI2kyP5yClJUk7rHuR1ezXyFn64KzKrg"/>
+                            <div class="absolute top-6 left-6">
+                                <span class="bg-surface-container-highest/60 backdrop-blur-md px-3 py-1 rounded-sm text-[0.65rem] font-label uppercase tracking-wider">Print</span>
+                            </div>
+                        </div>
+                        <h3 class="font-headline text-xl font-bold group-hover:text-primary transition-colors">Kinetix Exhibition</h3>
+                    </div>
+                    <!-- Large Project 2 -->
+                    <div class="md:col-span-8 group cursor-pointer">
+                        <div class="relative overflow-hidden rounded-md aspect-[16/9] mb-6 bg-surface-container-low">
+                            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" data-alt="premium high-tech website interface for a luxury automobile brand with futuristic glassmorphism elements and deep blue accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzgJuC1l91mRpE6328tvJe9jiWn_ROA4YH0iDt3OwhTrVuqYmITxCedqxOwQ2YDrxjegtZSYeTOrmrgd0O5MA_s7A3735u2pEQwC6MuLC7Zcv_6IoLRjDcIrw2Xh3L4oMeJBdCtMdYRoGDVSoC8Vc4x7t6LFA9p_IVqgZprOIxP3TrtU4AuxI0woy_I2eNn4o1dwr2cApuao7kLf3L0lApZYRZur8e83DR4-GctID-6eTCrO9eszv69I5StxTeqif_Neezu7_SFw"/>
+                            <div class="absolute top-6 left-6 flex gap-2">
+                                <span class="bg-surface-container-highest/60 backdrop-blur-md px-3 py-1 rounded-sm text-[0.65rem] font-label uppercase tracking-wider">Web Design</span>
+                                <span class="bg-surface-container-highest/60 backdrop-blur-md px-3 py-1 rounded-sm text-[0.65rem] font-label uppercase tracking-wider">Case Study</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-headline text-2xl font-bold group-hover:text-primary transition-colors">Aether Mobility</h3>
+                            <span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">north_east</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Services Section with Tonal Shift -->
+            <section class="bg-surface-container-low py-32 mt-12">
+                    <div class="px-6 md:px-12 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+                        <div>
+                            <h2 class="font-headline text-4xl md:text-6xl font-extrabold tracking-tight mb-8">Crafting the <br/><span class="text-tertiary">Invisible.</span></h2>
+                            <p class="font-body text-lg text-on-surface-variant leading-relaxed mb-12">
+                                            Good design is felt before it is understood. We specialize in the emotional resonance of brand identities, merging strategic thinking with high-fidelity execution.
+                                        </p>
+                            <div class="space-y-6">
+                                <div class="flex items-center gap-6 group">
+                                    <div class="w-12 h-12 rounded-sm bg-surface-container-high flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all duration-500">
+                                        <span class="material-symbols-outlined">auto_awesome</span>
+                                    </div>
+                                <div>
+                                    <h4 class="font-bold text-lg">Identity Design</h4>
+                                    <p class="text-on-surface-variant text-sm">Building cohesive brand languages from the ground up.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-6 group">
+                                <div class="w-12 h-12 rounded-sm bg-surface-container-high flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-all duration-500">
+                                    <span class="material-symbols-outlined">digital_out_of_home</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg">Creative Direction</h4>
+                                    <p class="text-on-surface-variant text-sm">Orchestrating visual narratives across multiple platforms.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute -top-12 -right-12 w-64 h-64 bg-primary/10 blur-[100px] rounded-full"></div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="aspect-square bg-surface-container-high rounded-md overflow-hidden p-8 flex items-center justify-center">
+                                    <img class="w-full h-full object-cover rounded-sm grayscale opacity-60" data-alt="close up detail of a professional graphics tablet and stylus on a minimalist workstation with soft workspace lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIGKJyRnMAElX93qKdh86fPYbVkq6AU_sneYKqK7eAInw1qlY875Q2EiuloHcfQE6efuQTh_xxPctEd3DDd4LUIo9_1S--perc-M8glGQrlv9lHvObkG_JydKLCMjKJeq9oCJuELWbsHCxdJSKEbwDNzUEFZtEgNgn6uinqmry_bQkOpzuNG5wBZAUanXO4lf2E_BP4kShQ3hQWnu5siGWNQOeceBrQNKY7BEdGqUMUj8Mm8un7mCb27SwZAjaRvijcV9JrSOOkA"/>
+                                </div>
+                                <div class="aspect-square bg-surface-container-high rounded-md overflow-hidden p-8 flex items-center justify-center mt-8">
+                                    <img class="w-full h-full object-cover rounded-sm grayscale opacity-60" data-alt="creative studio wall with inspiration photos, sketches and swatches pinned neatly in an organized grid layout" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbrsYzza1AmgIHu141yIkAs3qrahr4FGu4EDcI36qalbQkIjoaZx9KVVNUUEErn-86OBVFZf0qAUb_jnxdnopJVR5QaAFuRUuzZlDgi0zNECCSdWUhVGBWdnAnjQo_rlRzXiwbAJN3yGQCgAfdFanFpY3LEZR8gdSDhH7mEZlLA93_a0TmOEQMDPXghLrpc0YWJPmS9ixoZPqa3xXzWnTH3QMBxrw_zVr855OgQEQg7obpc0NepIRyl9hR2MC7dK64JOLgn_47rQ"/>
+                                </div>
+                                <div class="aspect-square bg-surface-container-high rounded-md overflow-hidden p-8 flex items-center justify-center -mt-8">
+                                    <img class="w-full h-full object-cover rounded-sm grayscale opacity-60" data-alt="macro shot of high quality designer paper samples in various shades of black, grey and metallic finishes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDbFQ1IXFpJ-Pt3wH28aUE946ntaMd-XnDMQ6qb4_YjFx5TaL8yEmvMhD5LymVXUIPBAaQd3w1rpXoyGRMd8SUDyaINXKYZV6Ky5gm6hWtjJSY4SFbY2uP988tAeGmOP9TpSG3MN8rHULFn2diCIPcp47aoJXlu90On3PHFlfvd9DPHOZQUIPVMFXnEwjT75BVG0bgneU_xcGehxe7AK5C9rRtn1sLSlnUg6U3ajT82raZhcnhixoCH04MIKfblkMFwM2dmjcJbw"/>
+                                </div>
+                                <div class="aspect-square bg-surface-container-high rounded-md overflow-hidden p-8 flex items-center justify-center">
+                                    <img class="w-full h-full object-cover rounded-sm grayscale opacity-60" data-alt="minimalist glass paperweight on a dark oak desk surface reflecting studio light in a professional design office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn-n2yTY_bdrOYQzdKqEHrmw2gN_7_XHH7UGkWG_9ZrT-_kxX9ISfbbt3u_OsfuzCjnlCTa5ohNBg8zjJSR8oqByPPc-YnbB4fokcYZroaeWDdg21k90GKhDPjfbTXWDm_wExMl110_2S4wstachXUJQ3lfNLZcUQ7JxjzQxdhQfDEIsqFR0ju6mQEHMtqdyctsEfOdFp-UkbvQGLzi6K9BX9YXfwBywtp4JDPnYUKeRve4nOzcSVViy0RY8EZIeMlh0xtWjeDrQ"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <!-- CTA Section -->
+            <section class="py-32 px-6 md:px-12 text-center max-w-4xl mx-auto">
+                <h2 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter mb-8 italic">Ready to archive your legacy?</h2>
+                <p class="text-on-surface-variant text-xl mb-12">We are currently accepting new projects for Q4 2026.</p>
+                <a class="inline-block border-b-2 border-primary text-primary text-3xl md:text-4xl font-headline font-bold pb-2 hover:border-b-4 transition-all duration-300" href="mailto:hello@archive.studio">
+                                hello@archive.studio
+                            </a>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="w-full mt-24 bg-[#1c1b1b]">
+            <div class="flex flex-col md:flex-row justify-between items-center px-6 md:px-12 py-16 w-full max-w-7xl mx-auto">
+                <div class="mb-8 md:mb-0">
+                    <div class="text-lg font-bold text-[#e5e2e1] mb-2 font-headline uppercase tracking-widest">KECH GRAPHIX</div>
+                    <p class="font-manrope text-[0.75rem] uppercase tracking-[0.05em] text-[#c3c5d9]">© 2026 The Cinematic Archive. All Rights Reserved.</p>
+                </div>
+                <div class="flex gap-8 font-manrope text-[0.75rem] uppercase tracking-[0.05em] text-[#c3c5d9]">
+                    <a class="hover:text-[#b6c4ff] underline-offset-4 hover:underline transition-all duration-500 ease-in-out" href="#">Instagram</a>
+                    <a class="hover:text-[#b6c4ff] underline-offset-4 hover:underline transition-all duration-500 ease-in-out" href="#">LinkedIn</a>
+                    <a class="hover:text-[#b6c4ff] underline-offset-4 hover:underline transition-all duration-500 ease-in-out" href="#">Behance</a>
+                    <a class="hover:text-[#b6c4ff] underline-offset-4 hover:underline transition-all duration-500 ease-in-out" href="#">Dribbble</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
