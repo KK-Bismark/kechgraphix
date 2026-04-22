@@ -8,10 +8,10 @@
 
         {% load static %}
 
-        <link rel="apple-touch-icon" sizes="180x180" href="{% static 'website/apple-touch-icon.png' %}">
-        <link rel="icon" type="image/png" sizes="32x32" href="{% static 'website/favicon-32x32.png' %}">
-        <link rel="icon" type="image/png" sizes="16x16" href="{% static 'website/favicon-16x16.png' %}">
-        <link rel="manifest" href="{% static 'website/site.webmanifest' %}">
+        <link rel="apple-touch-icon" sizes="180x180" href="{% static 'website/favicon/apple-touch-icon.png' %}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{% static 'website/favicon/favicon-32x32.png' %}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{% static 'website/favicon/favicon-16x16.png' %}">
+        <link rel="manifest" href="{% static 'website/favicon/site.webmanifest' %}">
 
         <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
@@ -160,36 +160,42 @@
                     <!-- Large Project -->
                     <div class="md:col-span-8 group cursor-pointer">
                         <div class="relative overflow-hidden rounded-md aspect-[16/9] mb-6 bg-surface-container-low">
-                            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" data-alt="ultra minimalist black and white fashion editorial layout with high contrast lighting and elegant sans-serif typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLMP3xUydQeALbvwuSx_bAAFrv8XLKI1zQj8HxhuqA8ArY2nfuOVwiPaHqtY0exg3cW3jw_3CFkyKa0CM6muezF84NhJl-a5XB3Xj4TTbpDMYxeiVezRldUPhw7h3pJf2Lx8BY_RkVQyV6ruvQhJn8tuTeUD9gHppV4UHZ65cDW4feS7YEnTi4wFEfZ6ugR9Kt5g2v7OV7CTroegbOKkpkNTQKGYDF2nIHK6To9Uxn7JRad1LcsMB6a-q7MDgPy6PVTZagBG9Kxw"/>
+                            <a href="{% static 'website/images/360bar.jpg' %}">
+                            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" data-alt="360 bar flyer" src="{% static 'website/images/360bar.jpg' %}"/>
                             <div class="absolute top-6 left-6 flex gap-2">
-                                <span class="bg-surface-container-highest/60 backdrop-blur-md px-3 py-1 rounded-sm text-[0.65rem] font-label uppercase tracking-wider">Visual Identity</span>
-                                <span class="bg-surface-container-highest/60 backdrop-blur-md px-3 py-1 rounded-sm text-[0.65rem] font-label uppercase tracking-wider">2024</span>
+                                <span class="bg-surface-container-highest/60 backdrop-blur-md px-3 py-1 rounded-sm text-[0.65rem] font-label uppercase tracking-wider">Flyer</span>
+                                <span class="bg-surface-container-highest/60 backdrop-blur-md px-3 py-1 rounded-sm text-[0.65rem] font-label uppercase tracking-wider">2025</span>
                             </div>
+                            </a>
                         </div>
                         <div class="flex justify-between items-start">
-                            <h3 class="font-headline text-2xl font-bold group-hover:text-primary transition-colors">Nocturnal Noir Studio</h3>
+                            <h3 class="font-headline text-2xl font-bold group-hover:text-primary transition-colors">360 BAR</h3>
                             <span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">north_east</span>
                         </div>
                     </div>
                     <!-- Small Project 1 -->
                     <div class="md:col-span-4 group cursor-pointer mt-0 md:mt-24">
                         <div class="relative overflow-hidden rounded-md aspect-[4/5] mb-6 bg-surface-container-low">
-                            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" data-alt="conceptual album cover with iridescent textures and liquid metal typography on a deep indigo background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOXM0EQ-_XsEBqZ8MAYm984C6RPR_6XG9YvBIp0ZdQ-JEldsvPWnx-Vnr8v2omLfNs9lA0upT66yVxn2TwJbfrn_Ea3bQEV1ETA00hPG3VFQUdajZ59i7mGEcog8aLRQkjrMEtU6j3PPNgn_Wbw0ImSh_Df1t6MURsCVeFIROL36iuSd6B3bpm09QtajA8zbZYroq4Lg5oUx_JouJeEfjee0pqOVEVY_wmaeV_9N1LTQXBgLM1DTd6qCtJGVpyS8Zl326xUuzf5g"/>
+                            <a href="{% static 'website/images/bring_job.jpg' %}">
+                            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" data-alt="flyer to advertise my own business" src="{% static 'website/images/bring_job.jpg' %}"/>
                             <div class="absolute top-6 left-6">
-                                <span class="bg-surface-container-highest/60 backdrop-blur-md px-3 py-1 rounded-sm text-[0.65rem] font-label uppercase tracking-wider">Editorial</span>
+                                <span class="bg-surface-container-highest/60 backdrop-blur-md px-3 py-1 rounded-sm text-[0.65rem] font-label uppercase tracking-wider">AD</span>
                             </div>
+                            </a>
                         </div>
-                        <h3 class="font-headline text-xl font-bold group-hover:text-primary transition-colors">Lumina Soundscape</h3>
+                        <h3 class="font-headline text-xl font-bold group-hover:text-primary transition-colors">Person Ad</h3>
                     </div>
                     <!-- Small Project 2 -->
                     <div class="md:col-span-4 group cursor-pointer -mt-0 md:-mt-12">
                         <div class="relative overflow-hidden rounded-md aspect-[4/5] mb-6 bg-surface-container-low">
-                            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" data-alt="abstract geometric print design with bold primary colors and grainy risograph texture on premium off-white paper" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxca92yNhF30CqPdSu4FeRg93JZPUv7i2Ego6-0yOb9CMR0wzxPjBuDCzj-2_zC78bi219GCC8CSynQBFyBGQfUYT-OSc_P6E5eWxOSnxkXp2vbjX3FRHT9EYBCBC6hmiBLCo1iDX35idNqrIqmSVj5156L_5AYqNNPOYdXLI3z1JVrvhtvlYl-U3Y42jrtSpXXAtwXnKjKWF0GA5pgei8ysHBQOleJoRuVAwkoV7ymQnI2kyP5yClJUk7rHuR1ezXyFn64KzKrg"/>
+                            <a href="{% static 'website/images/67.jpg' %}">
+                            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" data-alt="Ghana's 67th Independence Flyer" src="{% static 'website/images/67.jpg' %}"/>
                             <div class="absolute top-6 left-6">
-                                <span class="bg-surface-container-highest/60 backdrop-blur-md px-3 py-1 rounded-sm text-[0.65rem] font-label uppercase tracking-wider">Print</span>
+                                <span class="bg-surface-container-highest/60 backdrop-blur-md px-3 py-1 rounded-sm text-[0.65rem] font-label uppercase tracking-wider">FLYER</span>
                             </div>
+                            </a>
                         </div>
-                        <h3 class="font-headline text-xl font-bold group-hover:text-primary transition-colors">Kinetix Exhibition</h3>
+                        <h3 class="font-headline text-xl font-bold group-hover:text-primary transition-colors">67th Independence</h3>
                     </div>
                     <!-- Large Project 2 -->
                     <div class="md:col-span-8 group cursor-pointer">
