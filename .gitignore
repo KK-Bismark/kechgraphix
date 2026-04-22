@@ -1,4 +1,6 @@
-KechGraphix/__pycache__/*
-website/__pycache__/*
-website/migrations/__pycache__/*
+__pycache__/
+*.py[cod]
+*.pyc
+db.sqlite3
+staticfiles/
 .env
